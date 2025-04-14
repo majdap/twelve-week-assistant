@@ -1,13 +1,25 @@
-@import 'tailwindcss';
+/* Remove duplicate tailwind import since it's already in app.css */
+/* @import 'tailwindcss'; */
 
+/* Standard imports */
 @import './global/reset.css';
 @import './global/fonts.css';
-
-
 @import './global/variables.css';
 @import './global/global-styles.css';
 
-@import-glob './blocks/*.css';
-@import-glob './compositions/*.css';
-@import-glob './utilities/*.css';
+/* Block files */
+@import './blocks/prose.css';
+
+/* Composition files */
+@import './compositions/cluster.css';
+@import './compositions/flow.css';
+@import './compositions/grid.css';
+@import './compositions/repel.css';
+@import './compositions/sidebar.css';
+@import './compositions/switcher.css';
+@import './compositions/wrapper.css';
+
+/* Utility files */
+@import './utilities/region.css';
+@import './utilities/visually-hidden.css';
 
