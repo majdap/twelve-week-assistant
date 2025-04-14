@@ -1,0 +1,8 @@
+header {
+  --wrapper-max-width: clamp(50ch, 93vw, 70rem);
+	--region-space: var(--space-xl);
+	width: 100%;
+  ul {
+    gap: var(--space-s);
+  }
+}
